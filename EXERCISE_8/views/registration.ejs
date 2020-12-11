@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://wallpaperboat.com/wp-content/uploads/2020/06/03/42361/aesthetic-anime-04.jpg');
+            background-size: cover;
+            color: white;
+            background-repeat: no-repeat;
+        }
+
+        #container {
+            width: 70%;
+            margin: 5vw auto 0vw auto;
+            padding: 6vw 0vw;
+            background-color: rgba(38, 39, 39, 0.479);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 6px;
+        }
+
+        .form-header {
+            text-align: center;
+            color: aliceblue;
+        }
+
+        #content {
+            width: 70% auto;
+        }
+
+        #content form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #content form .forms {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #content form .form-input {
+            display: flex;
+            flex-direction: column;
+            margin: 1vw 1vw 0vw 1vw;
+            padding: 0.6vw;
+        }
+
+        .form-input input,
+        .password input {
+            padding: 0.6vw 1vw;
+            border-radius: 3px;
+            border: 2px solid #ff875c;
+            outline: none;
+            transition: 0.5s;
+        }
+
+        .form-input input:focus,
+        .password input:focus {
+            box-shadow: 0px 2px 0px 2px #ff875c;
+        }
+
+        .password {
+            display: flex;
+            flex-direction: column;
+            margin: 0vw 1.5vw 0vw 1.5vw;
+        }
+
+        .password label {
+            margin: 0.5vw;
+        }
+
+        label {
+            font-size: 1.5vw
+        }
+
+        button {
+            padding: 1vw 0vw;
+            margin-top: 2vw;
+            background-color: #ff875c;
+            color: white;
+            font-size: 1.3vw;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+
+        .foot {
+            text-align: center;
+            color: rgb(40, 41, 41);
+            font-weight: bold;
+            margin-top: 1vw;
+        }
+
+        h1 {
+            font-size: 2.7vw;
+            letter-spacing: 1vw;
+            background: -webkit-linear-gradient(#ff875c,white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .reg {
+            font-size: 2.1vw;
+            margin-top: -1.4vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="form-header">
+            <h1>REGISTER</h1>
+            <p class="reg">Register to create account</p>
+        </div>
+        <div id="content">
+            <form action="/login" method="get">
+                <div class="forms">
+                    <div class="form-input">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="enter last name">
+                        <br>
+                        <label>Email</label>
+                        <input type="text" placeholder="enter Email">
+                    </div>
+                    <div class="form-input">
+                        <label>First Name</label>
+                        <input type="text" placeholder="enter first name">
+                        <br>
+                        <label>Address</label>
+                        <input type="text" placeholder="enter address">
+                    </div>
+                </div>
+                <div class="password">
+                    <label>Password</label>
+                    <input type="text" placeholder="enter first name">
+                    <button>Create account</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="foot">
+        <p>Already have an account? <span><a href="/login">Click here</a></span></p>
+    </div>
+</body>
+
+</html>

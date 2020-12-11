@@ -1,0 +1,87 @@
+body{
+    background-image: url("https://www.futuretab.in/wp-content/uploads/2015/12/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    /* min-height: 100vh;
+    min-width: 100vw;
+    margin: 0; */
+
+}
+.sign-up-form{
+    background-color: transparent;
+    width: 390px;
+    min-height: 40vw;
+    border-radius: 10px;
+    box-shadow:0px 3px 15px 0px ;
+    display: inline-block; 
+}
+.sign-up-form form{
+    margin-top: -2vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+   
+}
+.sign-up-form button{
+    background-color: #ee3ed6;
+    border-radius: .6vw;
+    /* border: 1px solid; */
+    color: aliceblue;
+    margin-bottom: 2vw;
+}
+.sign-up-form button:hover{
+    color: #ee3ed6;
+    /* border: 1px solid aliceblue; */
+    background: black;
+    box-shadow:20px 20px 60px rgba(0, 0, 0, 0.548);
+}
+p[style="color:white"]{
+    margin: .3vw;
+}
+.form-header{
+    text-align: center;
+    color: rgb(245, 241, 241);
+    margin-top: -19px;
+    padding-bottom: 3vw;
+    padding-top: 2vw;
+}
+.form-control{
+    min-height: 40px;
+}
+.form-control:focus{
+    border-color: #ee3ed6;
+}
+.input-group{
+    margin-bottom: 35px;
+}
+.input-group-text{
+    background-color: black;
+}
+.fa{
+    color: #ee3ed6;
+}
+.new-here{
+    color: white;
+}
+.new-here a{
+    color: #c20eaa;
+    text-decoration-line: none;
+}
+.new-here a:hover{
+    color:rgb(252, 249, 249);
+    text-decoration-line: none;
+    
+}
+.small{
+    color: rgb(145, 12, 12);
+    font-size: 1.2vw;
+}
+.small a[href="#"]{
+    color: #f7f8f8;
+}
+.small a[href="#"]:hover{
+    color: black;
+    text-decoration-line: none;
+}
+
+

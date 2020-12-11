@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Login</title>
+    <style>
+        body{
+            background-image:url('https://cutewallpaper.org/21/anime-background-wallpaper/Download-Anime-Background-Wallpaper-HD-Backgrounds-Download-.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            width: 40%;
+            margin: 7vw auto;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(38, 39, 39, 0.281);
+            border-radius: 5px;
+        }
+        .container .header{
+            text-align: center;
+            margin-top: -3.7vw;
+        }
+        .header i{
+            font-size: 10vw;
+            color: rgb(248, 250, 255);
+        }
+        .header h5{
+            margin: 0;
+            font-size: 4vw;
+            letter-spacing: 0.5vw;
+            background: -webkit-linear-gradient(#0368eb,white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 1.5vw 5vw; 
+        }
+        form input, button{
+            margin: 0.8vw 0;
+            padding: 0.7vw;
+            border: 2px solid rgb(1, 111, 161) ;
+            outline: none;
+            border-radius: 4px;
+        }
+        form button{
+            background:rgb(0, 174, 255) ;
+            outline: none;
+            color: white;
+            font-size: 1.5vw;
+            padding: 0.5vw;
+        }
+        .foot{
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+        .foot span a{
+            color: rgb(252, 42, 42);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="fas fa-user-circle"></i>
+            <h5>Log in</h5>
+        </div>
+        <form action="/home" method="POST">
+            <input type="text" placeholder="Username">
+            <input type="text" placeholder="password">
+            <button type="submit">Log in</button>
+        </form>
+        <div class="foot">
+            <p>Forget password? <span><a href="/login">Click here</a></span></p>
+        </div>
+    </div>
+</body>
+</html>
